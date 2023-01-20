@@ -1,0 +1,118 @@
+// self setting  
+{
+	"workbench.colorTheme": "GitHub Dark Default",
+	"editor.fontFamily": "'Cascadia Code','宋体'",
+	"debug.console.fontFamily": "'Cascadia Code','宋体'",
+	"terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Light','宋体'",
+	"terminal.integrated.fontSize": 18,
+	"editor.fontSize":23,
+	"editor.lineHeight": 1.6,
+	"editor.fontLigatures": true,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 1000,
+	"workbench.iconTheme": "vscode-icons",
+	// better comments
+	"better-comments.tags": [
+		{
+			// 表示有未完成的代码
+			"tag": "TODO",
+			"color": "#FA973A",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			// 表示代码需要修正
+			"tag": "FIXME",
+			"color": "#FF0000",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			// 提示
+			"tag": "HINT",
+			"color": "#2faf64",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			// 记录一下作用
+			"tag": "NOTE",
+			"color": "#0067e4",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			// 有待商榷的代码
+			"tag": "HACK",
+			"color": "#fa973a",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			// 表示有问题
+			"tag": "BUG",
+			"color": "#ff0000",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+	"workbench.colorCustomizations": {
+		"errorLens.errorForeground": "#ff0000",
+		"errorLens.warningForeground": "#fa973a",
+		"errorLens.infoForeground": "#0067e4",
+		"errorLens.hintForeground": "#2faf64"
+	},
+	// code runner
+	"code-runner.saveFileBeforeRun": true,
+	"code-runner.runInTerminal": true,
+	"code-runner.executorMap": {
+		//HINT FOR WINDOWS
+		//"c": "cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$fileNameWithoutExt",
+		//HINT FOR LINUX
+		"c": "cd $dir && gcc $fileName -o ./bin/$fileNameWithoutExt && cd bin && ./$fileNameWithoutExt",
+		//HINT FOR WINDOWS
+		//"cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$fileNameWithoutExt"
+		//HINT FOR LINUX
+		"cpp": "cd $dir && g++ $fileName -o ./bin/$fileNameWithoutExt && cd bin && ./$fileNameWithoutExt"
+	},
+	//TODO CPP 补全
+	"editor.minimap.enabled": true,
+	"C_Cpp.autocomplete": "default",
+
+	// doxtgen document generator 
+	"doxdocgen.generic.authorName": "wananbrstl",
+	"doxdocgen.generic.authorEmail": "745960184@qq.com",
+	"doxdocgen.file.copyrightTag": [
+		"@copyright Copyright (c) {year} wananbrstl"
+	],
+	// c/c++ 
+	"C_Cpp.default.cStandard": "c17",
+	"C_Cpp.clang_format_style": "/usr/bin/clang-format", // 代码格式
+	// vim 
+	"vim.ignorecase": true,
+	// TODO 注释
+	// 图案注释和头部注释相结合 由两个字段控制
+	"fileheader.configObj": {
+		"designAddHead": false // 命令行生成图案注释 默认关闭该功能
+	},
+	/// neovim 
+	"vscode-neovim.useWSL": true,
+}
